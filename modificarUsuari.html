@@ -1,0 +1,28 @@
+<html>
+	<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Modificació d'usuari</title>
+	</head>
+ <body>
+	<div class="form-group ml-3 pt-4">
+    <form action='modificarUsuari.php' method=post>
+		<h1>Usuari que es vol modificar:</h1>
+		<p class="text-secondary" style="display:inline;">Identificador d'usuari: </p><input required="required" type=text name=uid ><br><br>
+		<p class="text-secondary" style="display:inline;">Unitat organitzativa de l'usuari: </p><input required="required" type=text name=ou ><br><br>
+		<h1>Selecciona l'opció a modificar: </h1>
+		<!--S'ha d'escollir una de les dos opcions-->
+		<p class="text-secondary" style="display:inline;">Uid Number: </p><input type=radio name=option value=uidOption ><br><br>
+		<p class="text-secondary" style="display:inline;">Gid Number: </p><input type=radio name=option value=gidOption ><br><br>
+		<p class="text-secondary" style="display:inline;">Nou valor: </p><input type=text name=valor ><br><br>
+		<input class="btn btn-primary" type="submit" value="Modificar Usuari"/>	
+	</form>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
